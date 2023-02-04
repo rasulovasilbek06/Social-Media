@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-size: 62.1%;
+}
+
+body {
+  position: relative;
+  scroll-behavior: smooth;
+  font-family: "League Spartan", sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding: 100px;
+  margin: 0 auto;
+}
+
+.body-left-img {
+  width: 584px;
+  height: 362px;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.body-right-img {
+  width: 1085px;
+  height: 673px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.section1 {
+  width: 100%;
+  display: flex;
+}
+
+.top {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.top .top--left {
+  display: flex;
+  flex-direction: column;
+}
+.top .top--left h1 {
+  max-width: 445px;
+  color: #512051;
+  font-weight: 700;
+  font-size: 5.6rem;
+  line-height: 4.8rem;
+  letter-spacing: -2px;
+  margin-bottom: 2.7rem;
+}
+.top .top--left p {
+  max-width: 445px;
+  color: #927B91;
+  font-weight: 500;
+  font-size: 1.9rem;
+  line-height: 2.5rem;
+  margin-bottom: 7.1rem;
+  letter-spacing: -0.63px;
+}
+.top .top--right {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+}
+.top .top--right .right-card {
+  gap: 32px;
+  width: 445px;
+  height: 56px;
+  display: flex;
+  border-radius: 8px;
+  margin-bottom: 1.6rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #F7F2F7;
+}
+.top .top--right .right-card h2 {
+  color: #512051;
+  font-size: 1.7rem;
+}
+
+.bottom {
+  width: 100%;
+  display: flex;
+}
+.bottom .bottom-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom .bottom-card .pink-card {
+  width: 350px;
+  height: 234px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #512051;
+}
+.bottom .bottom-card .pink-card .pink-top {
+  gap: 23px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.bottom .bottom-card .pink-card .pink-top h2 {
+  color: white;
+  font-size: 1.7rem;
+}
+.bottom .bottom-card .pink-card .pink-top p {
+  font-size: 1.7rem;
+  color: #EE69A4;
+}
+.bottom .bottom-card .pink-card .pink-bottom {
+  color: white;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .top {
+    gap: 1rem;
+  }
+  .bottom-card {
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .body-left-img {
+    display: none;
+  }
+  .body-right-img {
+    display: none;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top .top--left h1 {
+    text-align: center;
+  }
+  .top .top--left p {
+    text-align: center;
+  }
+  .bottom-card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .container {
+    padding: 25px;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top .top--left {
+    max-width: 327px;
+  }
+  .top .top--left h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 3.2rem;
+    line-height: 3.2rem;
+    margin-bottom: 2rem;
+  }
+  .top .top--left p {
+    max-width: 327px;
+    font-weight: 500;
+    font-size: 1.9rem;
+    text-align: center;
+    line-height: 2.5rem;
+    margin-bottom: 3.9rem;
+  }
+  .top .top--right {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+  .top .top--right .right-card {
+    gap: 1.7rem;
+    height: 78px;
+    display: flex;
+    max-width: 310px;
+    flex-direction: column;
+  }
+  .top .top--right .right-card h2 {
+    font-weight: 700;
+    font-size: 1.7rem;
+  }
+  .bottom-card {
+    gap: 2.5rem;
+    display: flex;
+    margin-bottom: 10rem;
+    flex-direction: column;
+  }
+  .bottom-card .pink-card {
+    max-width: 320px;
+    height: 248px;
+  }
+  .bottom-card .pink-card .pink-top .user h2 {
+    font-weight: 500;
+    font-size: 1.7rem;
+  }
+  .bottom-card .pink-card .pink-top .user p {
+    font-weight: 400;
+    font-size: 1.7rem;
+  }
+  .bottom-card .pink-bottom {
+    margin-bottom: 5rem;
+  }
+  .bottom-card .pink-bottom p {
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+  }
+}/*# sourceMappingURL=main.css.map */
